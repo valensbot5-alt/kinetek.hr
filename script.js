@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `\n${message}`
         );
 
-        window.open(`https://wa.me/385958485348?text=${waMessage}`, '_blank');
+        window.open(`https://wa.me/385923238233?text=${waMessage}`, '_blank');
 
         const btn = form.querySelector('button[type="submit"]');
         const originalHTML = btn.innerHTML;
