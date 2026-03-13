@@ -1,5 +1,5 @@
 // ============================================
-// KINETEK.HR - JavaScript
+// VITALIS NAJAM KINETEKA - JavaScript
 // ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
