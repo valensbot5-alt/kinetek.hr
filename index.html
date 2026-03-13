@@ -20,7 +20,7 @@
     <meta property="og:url" content="https://www.najam-kineteka.com.hr/">
     <meta property="og:title" content="Najam Kineteka (CPM) | Vitalis - Dostava u cijeloj Hrvatskoj">
     <meta property="og:description" content="Iznajmite kinetek (CPM uređaj) za rehabilitaciju koljena. Najam već od 16 EUR/dan. Dostava na kućnu adresu, stručna podrška, povoljne cijene.">
-    <meta property="og:image" content="https://www.najam-kineteka.com.hr/assets/images/og-image.jpg">
+    <meta property="og:image" content="https://www.najam-kineteka.com.hr/assets/images/kinetek-hero.jpg">
     <meta property="og:locale" content="hr_HR">
     <meta property="og:site_name" content="Vitalis Najam Kineteka">
 
@@ -28,7 +28,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Najam Kineteka (CPM) | Vitalis - Dostava u cijeloj Hrvatskoj">
     <meta name="twitter:description" content="Iznajmite kinetek (CPM uređaj) za rehabilitaciju koljena. Najam već od 16 EUR/dan. Dostava na kućnu adresu, stručna podrška.">
-    <meta name="twitter:image" content="https://www.najam-kineteka.com.hr/assets/images/og-image.jpg">
+    <meta name="twitter:image" content="https://www.najam-kineteka.com.hr/assets/images/kinetek-hero.jpg">
 
     <title>Najam Kineteka (CPM) | Vitalis | Od 16 EUR/dan</title>
 
@@ -60,8 +60,12 @@
         .hero__title-accent{color:var(--primary)}
         .hero__subtitle{font-size:1.1rem;color:var(--dark-500);line-height:1.7;margin-bottom:40px;max-width:480px;letter-spacing:.01em}
         .hero__badge{display:inline-flex;align-items:center;gap:10px;padding:8px 20px 8px 12px;background:var(--white);border:1px solid var(--gray-200);border-radius:100px;font-size:.8rem;font-weight:500;color:var(--dark-500);margin-bottom:32px}
-        @media(max-width:768px){.hero__inner{grid-template-columns:1fr}.hero__title{text-align:center}.hero__subtitle{text-align:center;margin-left:auto;margin-right:auto}.hero__badge{margin-left:auto;margin-right:auto}.hamburger{display:flex;flex-direction:column;gap:6px;background:none;border:none;cursor:pointer;padding:8px;z-index:1001}.hamburger span{display:block;width:24px;height:2px;background:var(--dark);border-radius:2px}.nav{position:fixed;top:0;right:0;bottom:0;width:280px;background:var(--white);flex-direction:column;padding:100px 32px 32px;transform:translateX(100%);transition:transform .5s var(--ease)}}
+        .hero__device-img{width:100%;max-width:500px;height:auto;border-radius:20px;box-shadow:0 25px 50px -12px rgba(0,0,0,.15);display:block}
+        @media(max-width:768px){.hero__inner{grid-template-columns:1fr}.hero__title{text-align:center}.hero__subtitle{text-align:center;margin-left:auto;margin-right:auto}.hero__badge{margin-left:auto;margin-right:auto}.hero__device-img{max-width:360px;margin:0 auto}.hamburger{display:flex;flex-direction:column;gap:6px;background:none;border:none;cursor:pointer;padding:8px;z-index:1001}.hamburger span{display:block;width:24px;height:2px;background:var(--dark);border-radius:2px}.nav{position:fixed;top:0;right:0;bottom:0;width:280px;background:var(--white);flex-direction:column;padding:100px 32px 32px;transform:translateX(100%);transition:transform .5s var(--ease)}}
     </style>
+
+    <!-- Preload hero image for LCP -->
+    <link rel="preload" as="image" href="/assets/images/kinetek-hero.jpg">
 
     <!-- Fonts (non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -147,45 +151,7 @@
             </div>
             <div class="hero__visual" data-animate="fade-up">
                 <div class="hero__device">
-                    <!-- CPM Device SVG Illustration -->
-                    <svg class="hero__device-svg" viewBox="0 0 400 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Base/Platform -->
-                        <rect x="40" y="280" width="320" height="24" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
-                        <rect x="60" y="270" width="280" height="16" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
-                        <!-- Rails -->
-                        <rect x="80" y="240" width="240" height="8" rx="4" fill="#334155"/>
-                        <rect x="80" y="255" width="240" height="8" rx="4" fill="#334155"/>
-                        <!-- Leg Rest (lower) -->
-                        <g class="hero__device-lower">
-                            <rect x="170" y="220" width="140" height="40" rx="8" fill="#1e293b" stroke="#0d9488" stroke-width="1.5"/>
-                            <rect x="180" y="228" width="120" height="24" rx="6" fill="#0f172a"/>
-                            <rect x="188" y="234" width="104" height="12" rx="3" fill="#115e59" opacity="0.3"/>
-                        </g>
-                        <!-- Leg Rest (upper - animated) -->
-                        <g class="hero__device-upper">
-                            <rect x="80" y="180" width="140" height="40" rx="8" fill="#1e293b" stroke="#0d9488" stroke-width="1.5"/>
-                            <rect x="90" y="188" width="120" height="24" rx="6" fill="#0f172a"/>
-                            <rect x="98" y="194" width="104" height="12" rx="3" fill="#115e59" opacity="0.3"/>
-                        </g>
-                        <!-- Joint/Hinge -->
-                        <circle cx="200" cy="230" r="16" fill="#0d9488" stroke="#5eead4" stroke-width="2"/>
-                        <circle cx="200" cy="230" r="6" fill="#0f172a"/>
-                        <!-- Control Panel -->
-                        <rect x="260" y="160" width="90" height="70" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
-                        <rect x="270" y="170" width="70" height="35" rx="6" fill="#0f172a"/>
-                        <!-- Screen glow -->
-                        <rect x="274" y="174" width="62" height="27" rx="4" fill="#0d9488" opacity="0.15"/>
-                        <text x="305" y="192" text-anchor="middle" fill="#5eead4" font-family="monospace" font-size="14" font-weight="bold">90</text>
-                        <text x="327" y="192" text-anchor="middle" fill="#5eead4" font-family="monospace" font-size="8">deg</text>
-                        <!-- Buttons -->
-                        <circle cx="280" cy="218" r="4" fill="#0d9488"/>
-                        <circle cx="295" cy="218" r="4" fill="#334155"/>
-                        <circle cx="310" cy="218" r="4" fill="#334155"/>
-                        <!-- Power indicator -->
-                        <circle cx="340" cy="170" r="3" fill="#10b981" class="hero__device-power"/>
-                        <!-- Decorative lines on body -->
-                        <line x1="100" y1="260" x2="300" y2="260" stroke="#334155" stroke-width="0.5" stroke-dasharray="4 4"/>
-                    </svg>
+                    <img src="/assets/images/kinetek-hero.jpg" alt="Kinetek CPM uređaj za rehabilitaciju koljena u upotrebi" width="500" height="500" class="hero__device-img" fetchpriority="high">
                     <!-- Floating stats -->
                     <div class="hero__floating-stat hero__floating-stat--1">
                         <span class="hero__floating-stat-num">2000+</span>
