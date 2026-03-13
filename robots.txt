@@ -1,3 +1,13 @@
 User-agent: *
 Allow: /
+Disallow: /assets/
+Disallow: /*.css$
+Disallow: /*.js$
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://www.najam-kineteka.com.hr/sitemap.xml
